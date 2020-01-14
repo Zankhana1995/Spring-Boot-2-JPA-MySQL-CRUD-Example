@@ -1,4 +1,4 @@
-package com.demo.sprigboot2.SpringBoot2JPACRUDexample;
+package com.demo.springboot2.SpringBoot2JPACRUDexample;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
