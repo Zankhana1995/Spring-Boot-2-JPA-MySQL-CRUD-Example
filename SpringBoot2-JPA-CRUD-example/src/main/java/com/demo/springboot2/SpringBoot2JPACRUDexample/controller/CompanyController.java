@@ -9,20 +9,19 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1")
-public class EmployeeController {
-
+@RequestMapping("api/v2")
+public class CompanyController {
+    //extra controller just for understanding
     @Autowired
     EmployeeRepository employeeRepository;
 
-    @GetMapping("/employees")
+    @GetMapping("/company")
     public List<Employee> getAllEmployee() {
         return employeeRepository.findAll();
     }
 
-    @PostMapping("employees")
+    @PostMapping("companies")
     public Employee createEmployee(@Valid @RequestBody Employee employee) {
         return employeeRepository.save(employee);
     }
-
 }
